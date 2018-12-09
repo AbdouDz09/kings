@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "dz!";
+const prefix = "k!";
 /////////////////////////
 ////////////////////////
 
@@ -313,27 +313,27 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'dz!help') {
+    if (message.content === 'k!help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**أكتب هي (dz!) + :**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .setDescription('**أكتب هي:**')
+        .addField('k!play', 'لتشغيل اغنية')
+        .addField('k!join', 'دخول رومك الصوتي')
+        .addField('k!disconnect', 'الخروج من رومك الصوتي')
+        .addField('k!skip', 'تخطي الأغنية')
+        .addField('k!pause', 'ايقاف الاغنية مؤقتا')
+        .addField('k!resume', 'تكملة الاغنية')
+        .addField('k!queue', 'اظهار قائمة التشغيل')
+        .addField('k!np', 'اظهار الاغنية اللي انت مشغلها حاليا')
 	.setFooter('============================================')
-        .addField('ghelp', 'اظهاراوامر العامة')
+        .addField('k!ghelp', 'اظهاراوامر العامة')
         .setFooter('by : AbdouFERSAOUI_Dz 👻็็็็็็็็็#5217')
       message.channel.send(helpEmbed);
     }
 });
 
 client.on('message', message => {
-    if (message.content === 'dz!ghelp') {
+    if (message.content === 'k!ghelp') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
         .addField('avatar', "افاتار الشخص المطلوب")
@@ -351,7 +351,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`dz!help music ,`,"http://twitch.tv/abdoufersaoui_dz")
+client.user.setGame(`k!help Kings Communt ,`,"http://twitch.tv/abdoufersaoui_dz")
 client.user.setStatus("Dz")
 });
 
